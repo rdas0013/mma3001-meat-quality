@@ -1,0 +1,13 @@
+# Data and large outputs: never commit the dataset
+data/*
+!data/.gitkeep
+runs/
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
