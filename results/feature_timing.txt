@@ -1,0 +1,2 @@
+﻿original : 26.2 ms/image (best of 3 passes over 80 images)
+fast     : 18.8 ms/image (best of 3 passes over 80 images)

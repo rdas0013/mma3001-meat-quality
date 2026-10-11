@@ -52,3 +52,45 @@ def extract_features(image_path: Path) -> np.ndarray:
     ]
     feats.append(np.array(cells))
     return np.concatenate(feats)
+
+
+def extract_features_fast(image_path: Path) -> np.ndarray:
+    """Compute the same feature vector as ``extract_features``, faster.
+
+    Replaces ``np.histogram`` with ``np.bincount`` on integer bin indices.
+    HSV channels are 8-bit integers (0-255) and every bin count divides 256
+    exactly, so ``value // (256 // bins)`` is the same bin that
+    ``np.histogram`` would choose. Results should match exactly.
+
+    Args:
+        image_path: Path to an RGB image.
+
+    Returns:
+        1-D float array of length ``N_FEATURES``.
+
+    Raises:
+        FileNotFoundError: If the image does not exist.
+        OSError: If the file cannot be read as an image.
+    """
+    image_path = Path(image_path)
+    if not image_path.is_file():
+        raise FileNotFoundError(f"Missing image: {image_path}")
+    img = Image.open(image_path).convert("RGB")
+    hsv = np.asarray(img.convert("HSV"))  # keep uint8 so integer division is exact
+
+    feats = []
+    for channel, bins in enumerate((HUE_BINS, SAT_BINS, VAL_BINS)):
+        idx = hsv[..., channel] // (256 // bins)
+        counts = np.bincount(idx.ravel(), minlength=bins).astype(float)
+        feats.append(counts / counts.sum())
+
+    gray = np.asarray(img.convert("L"), dtype=float)
+    gy, gx = np.gradient(gray)
+    mag = np.hypot(gx, gy)
+    h, w = mag.shape
+    cells = [
+        mag[i * h // GRID:(i + 1) * h // GRID, j * w // GRID:(j + 1) * w // GRID].mean()
+        for i in range(GRID) for j in range(GRID)
+    ]
+    feats.append(np.array(cells))
+    return np.concatenate(feats)
