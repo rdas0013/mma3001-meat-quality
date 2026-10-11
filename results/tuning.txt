@@ -1,0 +1,23 @@
+﻿=== Decision tree: max_depth ===
+depth  2: train R2=0.365  valid RMSE=0.0629  valid R2=0.099
+depth  3: train R2=0.472  valid RMSE=0.0607  valid R2=0.160
+depth  4: train R2=0.557  valid RMSE=0.0558  valid R2=0.289
+depth  5: train R2=0.636  valid RMSE=0.0532  valid R2=0.355
+depth  6: train R2=0.692  valid RMSE=0.0511  valid R2=0.406
+depth  8: train R2=0.814  valid RMSE=0.0541  valid R2=0.333
+depth 10: train R2=0.895  valid RMSE=0.0572  valid R2=0.254
+depth 15: train R2=0.989  valid RMSE=0.0559  valid R2=0.287
+
+=== SVR (rbf): C x epsilon, valid R2 ===
+C \ eps    0.001     0.01     0.03
+0.1        0.663    0.679    0.663
+1          0.664    0.677    0.706
+10         0.652    0.666    0.678
+100        0.570    0.612    0.661
+
+Best tree on valid: depth 6 (valid R2 0.406)
+Best SVR on valid: C=1, epsilon=0.03 (valid R2 0.706)
+
+=== Final test scores (chosen on valid) ===
+tree: test RMSE=0.0441  test R2=0.395
+SVR: test RMSE=0.0324  test R2=0.673
