@@ -1,0 +1,14 @@
+﻿Largest errors on test (pred - true):
+1. true=0.000 pred=0.090 err=+0.090  classes=none
+2. true=0.079 pred=-0.010 err=-0.089  classes=['packaging-error']
+3. true=0.012 pred=0.077 err=+0.065  classes=['packaging-error']
+4. true=0.224 pred=0.287 err=+0.064  classes=['unsealed']
+5. true=0.000 pred=0.063 err=+0.063  classes=none
+6. true=0.141 pred=0.083 err=-0.058  classes=['unsealed']
+7. true=0.147 pred=0.096 err=-0.051  classes=['unsealed']
+8. true=0.127 pred=0.076 err=-0.051  classes=['packaging-error']
+
+Over-predicted: 40  under-predicted: 40
+Mean error (bias): +0.0012
+Mean error for true area > 0.1: -0.0161 (n=23)
+Mean error for true area = 0: +0.0333 (n=12)
