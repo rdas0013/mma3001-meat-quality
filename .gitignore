@@ -13,3 +13,5 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 results/features.npz
+results/_tmp_resized.png
+results/profile.out
