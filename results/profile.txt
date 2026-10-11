@@ -1,0 +1,22 @@
+﻿Sun Oct 11 17:15:16 2026    results/profile.out
+
+         59844 function calls (59762 primitive calls) in 1.721 seconds
+
+   Ordered by: cumulative time
+   List reduced from 394 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      7/1    0.000    0.000    1.721    1.721 {built-in method builtins.exec}
+        1    0.090    0.090    1.721    1.721 C:\uni\mma3001-meat-quality\scripts\profile_features.py:12(run)
+       60    0.162    0.003    1.631    0.027 C:\uni\mma3001-meat-quality\src\meatqa\features.py:14(extract_features)
+      180    0.418    0.002    0.629    0.003 C:\uni\mma3001-meat-quality\.venv\Lib\site-packages\numpy\lib\_histograms_impl.py:685(histogram)
+      180    0.001    0.000    0.372    0.002 C:\uni\mma3001-meat-quality\.venv\Lib\site-packages\PIL\Image.py:1017(convert)
+      120    0.272    0.002    0.272    0.002 {method 'convert' of 'ImagingCore' objects}
+       60    0.228    0.004    0.229    0.004 C:\uni\mma3001-meat-quality\.venv\Lib\site-packages\numpy\lib\_function_base_impl.py:1002(gradient)
+      960    0.117    0.000    0.163    0.000 {built-in method numpy.asarray}
+      180    0.001    0.000    0.137    0.001 C:\uni\mma3001-meat-quality\.venv\Lib\site-packages\numpy\lib\_histograms_impl.py:278(_ravel_and_check_weights)
+      180    0.136    0.001    0.136    0.001 {method 'ravel' of 'numpy.ndarray' objects}
+      120    0.002    0.000    0.079    0.001 C:\uni\mma3001-meat-quality\.venv\Lib\site-packages\PIL\ImageFile.py:291(load)
+      118    0.071    0.001    0.071    0.001 {method 'decode' of 'ImagingDecoder' objects}
+
+

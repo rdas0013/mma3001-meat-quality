@@ -1,0 +1,4 @@
+﻿(train uses every 3rd filtered image to keep this quick)
+scale 1.0: 720x540  extract+resize 23.0 ms/image  valid R2=0.680  test R2=0.654  test RMSE=0.0333
+scale 0.5: 360x270  extract+resize 22.2 ms/image  valid R2=0.644  test R2=0.635  test RMSE=0.0342
+scale 0.25: 180x135  extract+resize 11.6 ms/image  valid R2=0.634  test R2=0.601  test RMSE=0.0358
