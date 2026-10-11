@@ -1,0 +1,5 @@
+﻿linear test r2  : point=0.5695  95% CI [0.3804, 0.6939]
+linear test rmse: point=0.0372  95% CI [0.0326, 0.0416]
+SVR    test r2  : point=0.6732  95% CI [0.5108, 0.7799]
+SVR    test rmse: point=0.0324  95% CI [0.0274, 0.0374]
+SVR minus linear test R2: 95% CI [0.0094, 0.2183]  (share of resamples SVR > linear: 98%)
