@@ -16,3 +16,4 @@ results/features.npz
 results/_tmp_resized.png
 results/profile.out
 results/failures/
+models/

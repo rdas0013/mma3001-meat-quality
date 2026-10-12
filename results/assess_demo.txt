@@ -1,0 +1,3 @@
+﻿{'image': 'C:\\uni\\mma3001-meat-quality\\data\\test\\images\\frame_with_red_102_jpg.rf.10163b7e614de52a86d75cf0c2def998.jpg', 'predicted_area_fraction': 0.07569055127758753, 'decision': 'fail', 'threshold': 0.04}
+REJECTED nope.jpg: Missing image: nope.jpg
+REJECTED README.md: Unsupported file type '.md'; use ['.jpeg', '.jpg', '.png']
