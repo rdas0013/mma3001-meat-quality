@@ -8,7 +8,7 @@ HUE_BINS = 16
 SAT_BINS = 8
 VAL_BINS = 8
 GRID = 4  # edge strength is averaged over a GRID x GRID grid of cells
-N_FEATURES = HUE_BINS + SAT_BINS + VAL_BINS + GRID * GRID  # 36
+N_FEATURES = HUE_BINS + SAT_BINS + VAL_BINS + GRID * GRID  # 48
 
 
 def extract_features(image_path: Path) -> np.ndarray:
