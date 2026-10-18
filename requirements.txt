@@ -58,7 +58,6 @@ markdown2==2.5.5
 MarkupSafe==3.0.4
 matplotlib==3.11.2
 matplotlib-inline==0.2.2
--e git+https://github.com/rdas0013/mma3001-meat-quality.git@4cb054010662e7d1a55d27b5ef0916ebb5df79c7#egg=meatqa
 mistune==3.3.4
 narwhals==2.26.0
 nbclient==0.11.0
