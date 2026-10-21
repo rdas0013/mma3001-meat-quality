@@ -1,0 +1,11 @@
+﻿saved results\figures\pred_vs_true.png
+saved results\figures\residuals.png
+saved results\figures\tree_depth.png
+saved results\figures\svr_heatmap.png
+Mean reference: R2 -0.173 [-0.389, -0.047]
+Linear: R2 0.570 [0.380, 0.694]
+Tree (depth 6): R2 0.395 [0.075, 0.596]
+SVR (C=1, eps=0.03): R2 0.673 [0.511, 0.780]
+saved results\figures\bootstrap_r2.png
+saved results\figures\threshold_sweep.png
+saved results\figures\robustness.png
