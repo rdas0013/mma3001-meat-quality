@@ -16,4 +16,8 @@ results/features.npz
 results/_tmp_resized.png
 results/profile.out
 results/failures/
-models/
+
+
+!data/samples/
+models/*
+!models/svr_model.joblib
