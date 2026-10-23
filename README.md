@@ -59,7 +59,7 @@ pytest
 A trained model (`models/svr_model.joblib`) and sample images (`data/samples/`) are included, so you can try it straight away:
 
 ```
-python scripts/assess_cli.py data/samples/<sample>.jpg
+python scripts/assess_cli.py data/samples/sample1.jpg
 ```
 
 Example output:
